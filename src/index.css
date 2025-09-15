@@ -8,35 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cosmic Backgrounds */
+    --background: 242 28% 8%;
+    --background-secondary: 248 32% 12%;
+    --foreground: 280 15% 88%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card Surfaces */
+    --card: 246 30% 11%;
+    --card-foreground: 280 15% 88%;
+    --card-glow: 248 30% 16%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Interactive Elements */
+    --popover: 246 30% 11%;
+    --popover-foreground: 280 15% 88%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand Colors - Cosmic Theme */
+    --primary: 292 84% 61%; /* Neon Pink */
+    --primary-foreground: 242 28% 8%;
+    --primary-glow: 292 84% 71%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 236 100% 65%; /* Cosmic Blue */
+    --secondary-foreground: 280 15% 88%;
+    --secondary-glow: 236 100% 75%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Mystical Purple */
+    --mystical: 266 83% 58%;
+    --mystical-foreground: 280 15% 88%;
+    --mystical-glow: 266 83% 68%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neutral Cosmic Tones */
+    --muted: 248 32% 18%;
+    --muted-foreground: 280 8% 65%;
+
+    --accent: 292 84% 61%;
+    --accent-foreground: 242 28% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 280 15% 88%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 248 30% 20%;
+    --input: 248 30% 16%;
+    --ring: 292 84% 61%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(292 84% 61%), hsl(266 83% 58%), hsl(236 100% 65%));
+    --gradient-hero: linear-gradient(180deg, hsl(242 28% 8%) 0%, hsl(248 32% 12%) 50%, hsl(246 30% 11%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(248 30% 16%), hsl(246 30% 11%));
+    
+    /* Shadows & Glows */
+    --glow-pink: 0 0 30px hsl(292 84% 61% / 0.4);
+    --glow-blue: 0 0 30px hsl(236 100% 65% / 0.4);
+    --glow-purple: 0 0 30px hsl(266 83% 58% / 0.4);
+    --shadow-cosmic: 0 25px 50px -12px hsl(292 84% 61% / 0.25);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +81,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Enhanced cosmic theme for dark mode */
+    --background: 242 28% 6%;
+    --background-secondary: 248 32% 10%;
+    --foreground: 280 15% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 246 30% 9%;
+    --card-foreground: 280 15% 92%;
+    --card-glow: 248 30% 14%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 246 30% 9%;
+    --popover-foreground: 280 15% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 292 84% 65%;
+    --primary-foreground: 242 28% 6%;
+    --primary-glow: 292 84% 75%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 236 100% 68%;
+    --secondary-foreground: 280 15% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --mystical: 266 83% 62%;
+    --mystical-foreground: 280 15% 92%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --muted: 248 32% 15%;
+    --muted-foreground: 280 8% 70%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 292 84% 65%;
+    --accent-foreground: 242 28% 6%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive: 0 84.2% 65%;
+    --destructive-foreground: 280 15% 92%;
+
+    --border: 248 30% 18%;
+    --input: 248 30% 14%;
+    --ring: 292 84% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +132,56 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background-secondary)) 100%);
+    min-height: 100vh;
   }
+
+  /* Cosmic grain texture */
+  .cosmic-grain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.03;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.5) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+  }
+
+  /* Mystical glow effects */
+  .glow-pink {
+    box-shadow: var(--glow-pink);
+  }
+  
+  .glow-blue {
+    box-shadow: var(--glow-blue);
+  }
+  
+  .glow-purple {
+    box-shadow: var(--glow-purple);
+  }
+
+  /* Floating animation for cosmic elements */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+  }
+
+  @keyframes cosmic-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .float { animation: float 6s ease-in-out infinite; }
+  .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+  .cosmic-rotate { animation: cosmic-rotate 20s linear infinite; }
 }
