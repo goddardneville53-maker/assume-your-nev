@@ -1,4 +1,4 @@
-import nevilleLaserEyes from "@/assets/neville-laser-eyes.jpg";
+import nevCoinLogo from "@/assets/nev-coin-logo.png";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg";
@@ -8,9 +8,9 @@ interface LogoProps {
 
 const Logo = ({ size = "md", showText = true, className = "" }: LogoProps) => {
   const sizes = {
-    sm: "w-8 h-8",
-    md: "w-12 h-12", 
-    lg: "w-20 h-20"
+    sm: "w-10 h-10",
+    md: "w-16 h-16", 
+    lg: "w-24 h-24"
   };
 
   const textSizes = {
@@ -22,9 +22,9 @@ const Logo = ({ size = "md", showText = true, className = "" }: LogoProps) => {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img 
-        src={nevilleLaserEyes} 
-        alt="Neville Goddard - $NEV Coin Logo" 
-        className={`${sizes[size]} rounded-full border-2 border-primary/50 shadow-glow-pink float`}
+        src={nevCoinLogo} 
+        alt="$NEV Coin - Neville Goddard Cryptocurrency Logo" 
+        className={`${sizes[size]} object-contain shadow-glow-pink float`}
       />
       {showText && (
         <div className="flex items-center gap-2">

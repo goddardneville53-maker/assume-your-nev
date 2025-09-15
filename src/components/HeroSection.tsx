@@ -24,7 +24,7 @@ const HeroSection = () => {
         {/* Main Hero Content */}
         <div className="mb-8">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <Logo size="lg" showText={false} className="w-32 h-32" />
+            <Logo size="lg" showText={false} className="w-40 h-40" />
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-6xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
