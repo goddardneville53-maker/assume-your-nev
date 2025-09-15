@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import nevilleLaserEyes from "@/assets/neville-laser-eyes.jpg";
+import Logo from "@/components/Logo";
 import { Sparkles, Zap, Eye } from "lucide-react";
 
 const HeroSection = () => {
@@ -24,11 +24,7 @@ const HeroSection = () => {
         {/* Main Hero Content */}
         <div className="mb-8">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <img 
-              src={nevilleLaserEyes} 
-              alt="Neville Goddard with laser eyes" 
-              className="w-32 h-32 rounded-full border-4 border-primary/50 shadow-glow-pink float"
-            />
+            <Logo size="lg" showText={false} className="w-32 h-32" />
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-6xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">

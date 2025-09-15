@@ -1,4 +1,5 @@
 import { Twitter, Send, ExternalLink } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const Footer = () => {
   return (
@@ -7,11 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <span className="text-3xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
-                $NEV
-              </span>
-              <span className="text-lg text-mystical">COIN</span>
+            <div className="flex justify-center md:justify-start mb-4">
+              <Logo size="md" />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               The coin that assumes itself into existence. Born from imagination, 
