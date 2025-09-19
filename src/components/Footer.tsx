@@ -24,10 +24,10 @@ const Footer = () => {
               <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 Pump.fun Chart
               </a>
-              <a href="#" className="block text-muted-foreground hover:text-secondary transition-colors text-sm">
+              <a href="https://telegram.org/" className="block text-muted-foreground hover:text-secondary transition-colors text-sm">
                 Telegram Group
               </a>
-              <a href="#" className="block text-muted-foreground hover:text-mystical transition-colors text-sm">
+              <a href="https://x.com/" className="block text-muted-foreground hover:text-mystical transition-colors text-sm">
                 Twitter/X
               </a>
               <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
